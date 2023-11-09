@@ -39,6 +39,7 @@ const TrainerDrawer: React.FC<TrainerDrawerProps> = ({
 
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
+  
   const handleTextFieldChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setViewedTrainer((prevDetails: ITrainers) => ({

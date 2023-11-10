@@ -14,6 +14,7 @@ import {
   Button,
   Grid,
 } from "@mui/material";
+
 import axios from "axios";
 import { ITrainers } from "./interface";
 import { Visibility } from "@mui/icons-material";
@@ -93,8 +94,9 @@ function Trainers() {
         </Grid>
       </Grid>
       </Container>
-
+      
       <Container>
+
         <TableContainer component={Paper}>
           <Table>
             <TableHead>
@@ -136,6 +138,7 @@ function Trainers() {
           </Table>
         </TableContainer>
       </Container>
+    
       {isDrawerOpen && (
         <TrainerDrawer
                   open={isDrawerOpen}
